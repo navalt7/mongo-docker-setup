@@ -7,8 +7,8 @@ ENV MONGO_INITDB_ROOT_PASSWORD=RfDyFM6oydhjD4M2
 ENV MONGO_INITDB_DATABASE=myInstagramDB
 
 # Copy SSL certificates into the container
-COPY mongodb-key.pem /etc/ssl/mongodb-key.pem
-COPY mongodb-cert.pem /etc/ssl/mongodb-cert.pem
+COPY certificates/mongodb-key.pem /etc/ssl/mongodb-key.pem
+COPY certificates/mongodb-cert.pem /etc/ssl/mongodb-cert.pem
 
 # Expose the default MongoDB port
 EXPOSE 27017
